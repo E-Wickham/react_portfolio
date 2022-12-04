@@ -1,0 +1,654 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+}
+
+li > a {
+    transition:0.2s;
+    color: black;
+}
+
+a:hover, .work-item-link:hover{
+    text-decoration-color: black;
+    color: black!important
+}
+li > a:hover {
+    color: midnightblue;
+}
+.contact-buttons {
+    position:absolute;
+    right: 10px;
+    margin-bottom: 0;
+}
+.contact-btn {
+    cursor: pointer;
+}
+.contact-btn > a {
+    text-decoration: none;
+    color: black!important;
+}
+
+.contact-buttons > li{
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+body {
+    font-family: "Patua One";
+}
+
+h1 {
+    font-size: 92pt;
+    font-family: "Patua One";
+    padding-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 1rem;
+}
+
+h2,h3,h4 {
+    font-family: "Patua One";
+
+}
+
+p {
+    font-family: Lato;
+    font-size: 1.2em;
+}
+.nav {
+    background-color: #E3E0AF;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav-flex svg.hero-name {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.nav-flex > * {
+    padding: 0.5rem;
+}
+
+.hamburger {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 3px;
+    display: block;
+}
+
+.link-no-show{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    flex: 1 0 0;
+}
+
+#helloMsg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    padding: 1rem;
+    border: black 3px solid;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: 30px;
+    animation: opac 0.6s ease-in;
+}
+
+.portfolio-section {
+    animation: opac 0.6s ease-in;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.helloMsg-grid h2 {
+    font-size: 4rem;
+    text-align: left;
+}
+#helloMsg>p {
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+#welcome{
+    display: flex;
+}
+
+#welcome-note{
+
+    padding: 30px;
+    margin: 30px;
+    margin-left: 70px;
+
+    background-color:#E8E16D;
+}
+
+#folder{
+    flex: 2 0 0;
+    height: 614px;
+    margin-left:70px;
+    margin-right:70px;
+}
+
+#folderTabs{
+    margin-top: 100px;
+    padding-left: 10px;
+}
+
+#folderTabs:hover{
+    cursor: pointer;
+}
+
+#folderTabs .inactive{
+    z-index: 0;
+}
+#folderTabs .active{
+    z-index:1;
+}
+#folderTabs div{
+    font-family: "Patua One";
+    padding: 15px;
+    display: inline;
+    background-color: #E3E0AF;
+    text-decoration: none;
+    border-radius: 15px;
+    z-index: 2;
+    margin: 0 0.125rem;
+}
+
+#folderBody{
+    background-color: #E3E0AF;
+    border-radius: 15px;
+    height: 600px;
+    align-content: bottom;
+    z-index: 0;
+    margin: 0;
+}
+
+
+.button-flex {
+    display: flex;
+    justify-items: flex-start;
+}
+
+.button-flex > * {
+    max-width: 200px;
+}
+.contact-btn {
+    font-family: Patua One;
+    border: 2px solid black;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex: 1 0 0;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #E3E0AF;
+    transition: 0.3s;
+}
+
+#aboutFlex{
+    display: flex;
+    background-color: #E3E0AF;
+    border-radius: 15px;
+    height: 100%;
+    margin-right: 130px;
+    margin-left: 100px;
+    align-content: bottom;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#aboutText {
+    flex: 1 0 0;
+}
+
+#switchBG {
+    position: relative;
+    background-color: #181630;
+    height: 100%;
+    color: lightblue;
+    z-index: 2;
+    padding-bottom: 2rem;
+}
+
+
+/* MODAL */
+.modalContentWrapper{
+    padding: 20px;
+}
+
+.modal-pic {
+    width: 80%;
+    display: block;
+
+    margin: 20px auto;
+}
+
+/* CSS PICS */
+
+#imagedisplay{
+    height: 400;
+    width: 500;
+}
+
+#divImg img{
+    display: block;
+    margin: auto;
+    margin-top: auto;
+   
+}
+
+#headshot {
+    display: block;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 10px;
+}
+/*Portfolio Items*/
+
+
+.portfolio-content-wrapper{
+    display:flex;
+
+}
+
+.portfolio-content{
+    flex: 1 0 0;
+    list-style-type:none;
+    position:relative;
+    top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    padding: 50px;
+        transition: 0.2s;
+
+}
+
+.portfolio-content:hover{
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.2s;
+}
+
+
+.portfolio-content>li{
+    text-align: center;
+}
+
+.portfolio-content-image{
+    display: block;
+    padding: 5px;
+
+}
+
+.portfolio-content-about{
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Patua One";
+    background-color:rgba(255,255,255,0.0);
+    border: 2px solid black;
+}
+
+.portfolio-content-link, .portfolio-content-source {
+    transition: 0.2s;
+    border: 2px solid black;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: "Patua One";
+    padding-top: 5px;
+
+
+}
+
+.portfolio-content-link:hover,.portfolio-content-source:hover, .portfolio-content-about:hover{
+    transition: 0.2s;
+    background-color: white;
+}
+
+.iconpic {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#coding-folder-content {
+    display: none;
+    transition: 0.3s;
+}
+#web-design-folder-content {
+    display: none;
+    transition: 0.3s;
+    position: relative;
+    z-index: 7;
+    bottom: 600px;
+}
+
+#script-folder-content {
+    position: relative;
+    z-index: 7;
+    display: none;
+    bottom: 600px;
+}
+
+#misc-folder-content {
+    position: relative;
+    z-index: 7;
+    display: none;
+    bottom: 600px;
+}
+
+
+.lang-title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px 0;
+    text-decoration: underline;
+}
+
+.lang-box{
+    display: block;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.lang-flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,4fr));
+
+}
+
+.lang-item {
+    /*flex: 1 0 0;
+    text-align: center;*/
+    border: 2px solid #2a2a2a;
+    color:#2a2a2a;
+    margin: 10px;
+    padding: 1rem;
+    min-width: 250px;
+    /*display: flex;
+    flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas: "a b"
+                         "a c"
+                         "a d";
+    grid-template-columns: 1fr minmax(100px, 2fr);
+    background-color: #f7f5f5;
+}
+
+/* EXPERIENCE BLOCKS */
+
+.lang-item img {
+    max-height: 100px;
+    max-width: 100px;
+    
+}
+.lang-item .a {
+    grid-area: a;
+    padding-right: 1rem;
+}
+.lang-item .b {
+    grid-area: b;
+}
+.lang-item .c {
+    grid-area: c;
+}
+.lang-item .d {
+    grid-area: d;
+}
+
+.lang-item.comms {
+    border: 5px solid yellow;
+}
+.lang-item.jrnl {
+    border: 5px solid red;
+}
+.lang-item.code {
+    border: 5px solid green;
+}
+
+
+.lang-item h4 {
+    margin:0;
+}
+
+/* NEW PORTFOLIO SECTION - NOV 26 */
+
+.container-svg {
+    fill: #f2f2f2;
+}
+
+.container-svg:hover {
+    z-index: 1;
+}
+
+.folder-details:hover ~ .container-svg,
+.container-svg:hover 
+{
+    transform: scale(1.02);
+    transition: 0.5s;
+    fill: #E3E0AF;
+    cursor: pointer;
+}
+
+
+
+.folder-details:hover {
+    cursor: pointer;
+}
+
+#folder-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#folder-wrapper svg {
+    padding: 1rem;
+}
+
+.folder-details {
+    position: relative;
+    top: 275px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2rem ;
+    z-index: 40;
+}
+
+.workList {
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.workList-inner{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.wi-link-flex{
+    display: flex;
+    padding: 1rem 0 0 0;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.wi-link-flex-title {
+    display: flex;
+    max-width: 80%;
+    margin: auto;
+}
+
+.wi-link-flex:nth-of-type(1), .wi-link-flex-title {
+    justify-content: space-between;
+    padding: 0;
+}
+
+.work-item-link:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+.work-item-link a {
+    text-decoration: none;
+    color: black;
+}
+.work-item-link {
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+}
+.work-item {
+    border: 2px solid black;
+    padding: 1rem;
+    max-width: 100%;
+    text-align: left;
+    margin: 1rem 0;
+    background: rgba(255,255,255,0.9);
+}
+
+.hello-flex {
+    display:flex;
+}
+
+.hero-img img {
+    width: 250px;
+    margin: 0.5rem 0.75rem;
+    padding-right: 0.5rem;
+    max-height:250px;
+    object-fit: cover;
+    object-position: 10% 0;
+    border-radius: 3px;
+}
+
+.close-modal {
+    border: none;
+    background: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.close-modal:hover,
+.work-item-link:hover {
+    background-color:#E3E0AF;
+    transition: 0.4s background-color;
+}
+
+.code-lang {
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 2px solid lightblue;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+}
+.code-lang h4{
+    padding: 1.7rem 0 0.5rem 0;
+    justify-self: center;
+}
+
+.code-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,4fr));
+    justify-items: center;
+
+}
+.lang-leg {
+    border: 2px solid lightblue;
+    width: 300px;
+    padding: 0.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 870px) {
+
+    #folderTabs > ul > li {
+        padding-left: 10px;
+        padding-bottom: 25px;
+        padding-top: 10px;
+        margin-left: 0px;
+    }
+
+    #helloMsg {
+        width: 80%;
+        padding: 10px;
+        border: black 3px solid;
+        border-radius: 3px;
+        background-color: rgba(255,255,255,0.8);
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    .lang-item {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .lang-box{
+        display: block;
+        max-width: 90%;
+        margin-left: 20%;    
+    }
+
+    .portfolio-content-link, .portfolio-content-source {
+        transition: 0.2s;
+        border: 2px solid black;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-family: "Patua One";
+        padding-top: 5px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #st0,#st1,
+    #st2,#st3,
+    #st4,#st5,
+    #st6,#st7,
+    #st8,#st9 {
+        display: none;
+    }
+}

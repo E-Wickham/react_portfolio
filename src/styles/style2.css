@@ -1,0 +1,304 @@
+body2 {
+    overflow: hidden;
+  }
+  
+  .wrap2 {
+    -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+  }
+  
+  .svg {
+    enable-background:new 0 0 561 406.02;
+    position: absolute;
+    bottom: -100vh;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  
+  svg#st0 {
+    left: 9%;
+    -webkit-animation: raise1 9s linear infinite;
+            animation: raise1 9s linear infinite;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-transform: scale(-0.3) rotate(293deg);
+            transform: scale(-0.3) rotate(293deg);
+    z-index: 1;
+    -webkit-filter: blur(-5px);
+            filter: blur(-5px);
+    height:500px;
+  }
+  
+  @-webkit-keyframes raise1 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(-0.3) rotate(91deg);
+              transform: scale(-0.3) rotate(91deg);
+    }
+  }
+  
+  @keyframes raise1 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(-0.3) rotate(91deg);
+              transform: scale(-0.3) rotate(91deg);
+    }
+  }
+  
+  svg#st1 {
+    left: 60%;
+    -webkit-animation: raise2 14s linear infinite;
+            animation: raise2 14s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-transform: scale(1) rotate(141deg);
+            transform: scale(1) rotate(141deg);
+    z-index: 1;
+    -webkit-filter: blur(-4px);
+            filter: blur(-4px);
+  }
+  
+  @-webkit-keyframes raise2 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1) rotate(95deg);
+              transform: scale(1) rotate(95deg);
+    }
+  }
+  
+  @keyframes raise2 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1) rotate(95deg);
+              transform: scale(1) rotate(95deg);
+    }
+  }
+  
+  svg#st2 {
+    left: 79%;
+    -webkit-animation: raise3 11s linear infinite;
+            animation: raise3 11s linear infinite;
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-transform: scale(1) rotate(260deg);
+            transform: scale(1) rotate(260deg);
+    z-index: 1;
+    -webkit-filter: blur(-3px);
+            filter: blur(-3px);
+  }
+  
+  @-webkit-keyframes raise3 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1) rotate(175deg);
+              transform: scale(1) rotate(175deg);
+    }
+  }
+  
+  @keyframes raise3 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1) rotate(175deg);
+              transform: scale(1) rotate(175deg);
+    }
+  }
+  
+  svg#st3 {
+    left: 20%;
+    -webkit-animation: raise4 11s linear infinite;
+            animation: raise4 11s linear infinite;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+    -webkit-transform: scale(0.6) rotate(184deg);
+            transform: scale(0.6) rotate(184deg);
+    z-index: 1;
+    -webkit-filter: blur(-2px);
+            filter: blur(-2px);
+  }
+  
+  @-webkit-keyframes raise4 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(0.6) rotate(248deg);
+              transform: scale(0.6) rotate(248deg);
+    }
+  }
+  
+  @keyframes raise4 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(0.6) rotate(248deg);
+              transform: scale(0.6) rotate(248deg);
+    }
+  }
+  
+  svg#st4  {
+    left: 30%;
+    -webkit-animation: raise5 15s linear infinite;
+            animation: raise5 15s linear infinite;
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-transform: scale(0.9) rotate(269deg);
+            transform: scale(0.9) rotate(269deg);
+    z-index: 1;
+    -webkit-filter: blur(-1px);
+            filter: blur(-1px);
+  }
+  
+  @-webkit-keyframes raise5 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(0.9) rotate(31deg);
+              transform: scale(0.9) rotate(31deg);
+    }
+  }
+  
+  @keyframes raise5 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(0.9) rotate(31deg);
+              transform: scale(0.9) rotate(31deg);
+    }
+  }
+  
+  svg#st5  {
+    left: 44%;
+    -webkit-animation: raise6 10s linear infinite;
+            animation: raise6 10s linear infinite;
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-transform: scale(1.2) rotate(25deg);
+            transform: scale(1.2) rotate(25deg);
+    z-index: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  
+  @-webkit-keyframes raise6 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.2) rotate(90deg);
+              transform: scale(1.2) rotate(90deg);
+    }
+  }
+  
+  @keyframes raise6 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.2) rotate(90deg);
+              transform: scale(1.2) rotate(90deg);
+    }
+  }
+  
+  svg#st6  {
+    left: -18%;
+    -webkit-animation: raise7 11s linear infinite;
+            animation: raise7 11s linear infinite;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+    -webkit-transform: scale(1.5) rotate(205deg);
+            transform: scale(1.5) rotate(205deg);
+    z-index: 1;
+  
+  }
+  
+  @-webkit-keyframes raise7 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.5) rotate(230deg);
+              transform: scale(1.5) rotate(230deg);
+    }
+  }
+  
+  @keyframes raise7 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.5) rotate(230deg);
+              transform: scale(1.5) rotate(230deg);
+    }
+  }
+  
+  svg#st7  {
+    left: 40%;
+    -webkit-animation: raise8 19s linear infinite;
+            animation: raise8 19s linear infinite;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
+    -webkit-transform: scale(1.8) rotate(122deg);
+            transform: scale(1.8) rotate(122deg);
+    z-index: 1;
+  
+  }
+  
+  @-webkit-keyframes raise8 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.8) rotate(236deg);
+              transform: scale(1.8) rotate(236deg);
+    }
+  }
+  
+  @keyframes raise8 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(1.8) rotate(236deg);
+              transform: scale(1.8) rotate(236deg);
+    }
+  }
+  
+  svg#st8  {
+    left: 72%;
+    -webkit-animation: raise9 21s linear infinite;
+            animation: raise9 21s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-transform: scale(2.1) rotate(20deg);
+            transform: scale(2.1) rotate(20deg);
+    z-index: 1;
+  
+  }
+  
+  @-webkit-keyframes raise9 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(2.1) rotate(128deg);
+              transform: scale(2.1) rotate(128deg);
+    }
+  }
+  
+  @keyframes raise9 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(2.1) rotate(128deg);
+              transform: scale(2.1) rotate(128deg);
+    }
+  }
+  
+  .svg:nth-child(10) {
+    left: -14%;
+    -webkit-animation: raise10 10s linear infinite;
+            animation: raise10 10s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+    -webkit-transform: scale(2.4) rotate(309deg);
+            transform: scale(2.4) rotate(309deg);
+    z-index: -4;
+    -webkit-filter: blur(4px);
+            filter: blur(4px);
+  }
+  
+  @-webkit-keyframes raise10 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(2.4) rotate(214deg);
+              transform: scale(2.4) rotate(214deg);
+    }
+  }
+  
+  @keyframes raise10 {
+    to {
+      bottom: 150vh;
+      -webkit-transform: scale(2.4) rotate(214deg);
+              transform: scale(2.4) rotate(214deg);
+    }
+  }
