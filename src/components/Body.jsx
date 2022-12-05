@@ -43,12 +43,12 @@ export default function Body(){
                                         </a>    
                                     </div>
                                     <div className="contact-btn">
-                                        <a className="link-no-show" href="#">
+                                        <a className="link-no-show" href="https://twitter.com/ES_Wickham">
                                             <Icon.Twitter /> Twitter
                                         </a>    
                                     </div>
                                     <div className="contact-btn">
-                                        <a className="link-no-show" href="#">
+                                        <a className="link-no-show" href="https://github.com/e-wickham">
                                             <Icon.GitHub /> GitHub
                                         </a>    
                                     </div>
