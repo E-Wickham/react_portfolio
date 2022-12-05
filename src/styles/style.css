@@ -9,11 +9,6 @@ main {
     z-index: 2;
 }
 
-li > a {
-    transition:0.2s;
-    color: black;
-}
-
 a:hover, .work-item-link:hover{
     text-decoration-color: black;
     color: black!important
@@ -81,14 +76,6 @@ p {
     padding: 0.5rem;
 }
 
-.hamburger {
-    width: 25px;
-    height: 2px;
-    background-color: black;
-    margin: 3px;
-    display: block;
-}
-
 .link-no-show{
     text-decoration: none;
     color: black;
@@ -137,58 +124,6 @@ margin-bottom: 50px;
     display: flex;
 }
 
-#welcome-note{
-
-    padding: 30px;
-    margin: 30px;
-    margin-left: 70px;
-
-    background-color:#E8E16D;
-}
-
-#folder{
-    flex: 2 0 0;
-    height: 614px;
-    margin-left:70px;
-    margin-right:70px;
-}
-
-#folderTabs{
-    margin-top: 100px;
-    padding-left: 10px;
-}
-
-#folderTabs:hover{
-    cursor: pointer;
-}
-
-#folderTabs .inactive{
-    z-index: 0;
-}
-#folderTabs .active{
-    z-index:1;
-}
-#folderTabs div{
-    font-family: "Patua One";
-    padding: 15px;
-    display: inline;
-    background-color: #E3E0AF;
-    text-decoration: none;
-    border-radius: 15px;
-    z-index: 2;
-    margin: 0 0.125rem;
-}
-
-#folderBody{
-    background-color: #E3E0AF;
-    border-radius: 15px;
-    height: 600px;
-    align-content: bottom;
-    z-index: 0;
-    margin: 0;
-}
-
-
 .button-flex {
     display: flex;
     justify-items: flex-start;
@@ -212,24 +147,6 @@ margin-bottom: 50px;
     transition: 0.3s;
 }
 
-#aboutFlex{
-    display: flex;
-    background-color: #E3E0AF;
-    border-radius: 15px;
-    height: 100%;
-    margin-right: 130px;
-    margin-left: 100px;
-    align-content: bottom;
-    padding-top: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-
-#aboutText {
-    flex: 1 0 0;
-}
-
 #switchBG {
     position: relative;
     background-color: #181630;
@@ -239,138 +156,15 @@ margin-bottom: 50px;
     padding-bottom: 2rem;
 }
 
-
-/* MODAL */
-.modalContentWrapper{
-    padding: 20px;
-}
-
-.modal-pic {
-    width: 80%;
-    display: block;
-
-    margin: 20px auto;
-}
-
-/* CSS PICS */
-
-#imagedisplay{
-    height: 400;
-    width: 500;
-}
-
-#divImg img{
-    display: block;
-    margin: auto;
-    margin-top: auto;
-   
-}
-
-#headshot {
-    display: block;
-    margin: 30px auto;
-    width: 50%;
-    border-radius: 10px;
-}
-/*Portfolio Items*/
-
-
-.portfolio-content-wrapper{
-    display:flex;
-
-}
-
-.portfolio-content{
-    flex: 1 0 0;
-    list-style-type:none;
-    position:relative;
-    top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 300px;
-    padding: 50px;
-        transition: 0.2s;
-
-}
-
-.portfolio-content:hover{
-    background-color: rgba(255,255,255,0.3);
-    transition: 0.2s;
-}
-
-
-.portfolio-content>li{
-    text-align: center;
-}
-
-.portfolio-content-image{
-    display: block;
-    padding: 5px;
-
-}
-
-.portfolio-content-about{
-    margin-top: 10px;
-    padding: 5px;
-    font-family: "Patua One";
-    background-color:rgba(255,255,255,0.0);
-    border: 2px solid black;
-}
-
-.portfolio-content-link, .portfolio-content-source {
-    transition: 0.2s;
-    border: 2px solid black;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-family: "Patua One";
-    padding-top: 5px;
-
-
-}
-
-.portfolio-content-link:hover,.portfolio-content-source:hover, .portfolio-content-about:hover{
-    transition: 0.2s;
-    background-color: white;
-}
-
 .iconpic {
     display: block;
     margin-bottom: 20px;
 }
 
-#coding-folder-content {
-    display: none;
-    transition: 0.3s;
-}
-#web-design-folder-content {
-    display: none;
-    transition: 0.3s;
-    position: relative;
-    z-index: 7;
-    bottom: 600px;
-}
-
-#script-folder-content {
-    position: relative;
-    z-index: 7;
-    display: none;
-    bottom: 600px;
-}
-
-#misc-folder-content {
-    position: relative;
-    z-index: 7;
-    display: none;
-    bottom: 600px;
-}
-
-
 .lang-title{
     text-align: center;
     font-size: 3rem;
-    padding: 30px 0;
+    padding: 1rem 0;
     text-decoration: underline;
 }
 
@@ -383,19 +177,19 @@ margin-bottom: 50px;
 .lang-flex{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px,4fr));
-
 }
 
+.lang-item-school {
+    border: 2px solid lightblue;
+    margin: 0.5rem;
+    padding: 1rem;
+}
 .lang-item {
-    /*flex: 1 0 0;
-    text-align: center;*/
     border: 2px solid #2a2a2a;
     color:#2a2a2a;
     margin: 10px;
     padding: 1rem;
     min-width: 250px;
-    /*display: flex;
-    flex-direction: column;*/
     justify-content: center;
     align-items: center;
     display: grid;
@@ -437,7 +231,6 @@ margin-bottom: 50px;
     border: 5px solid green;
 }
 
-
 .lang-item h4 {
     margin:0;
 }
@@ -460,8 +253,6 @@ margin-bottom: 50px;
     fill: #E3E0AF;
     cursor: pointer;
 }
-
-
 
 .folder-details:hover {
     cursor: pointer;
@@ -578,34 +369,61 @@ margin-bottom: 50px;
     width: 120px;
     height: 120px;
 }
-.code-lang h4{
+.code-lang h4 {
     padding: 1.7rem 0 0.5rem 0;
     justify-self: center;
 }
 
 .code-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,4fr));
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px,4fr));
     justify-items: center;
-
+    grid-gap: 1rem;
+    width: 100%;
 }
 .lang-leg {
     border: 2px solid lightblue;
-    width: 300px;
+    width: 230px;
     padding: 0.5rem;
     margin: auto;
     text-align: center;
 }
 
+.leg-color {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.leg-item {
+    display: flex;
+    align-items: center;
+}
+
 /*MEDIA QUERIES*/
 
+@media only screen and (min-width: 871px) and (max-width: 1200px) {
+    .hello-flex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helloMsg-grid h2 {
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 870px) {
 
-    #folderTabs > ul > li {
-        padding-left: 10px;
-        padding-bottom: 25px;
-        padding-top: 10px;
-        margin-left: 0px;
+    .hello-flex {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .helloMsg-grid h2 {
+        text-align: center;
     }
 
     #helloMsg {
@@ -615,7 +433,6 @@ margin-bottom: 50px;
         border-radius: 3px;
         background-color: rgba(255,255,255,0.8);
         text-align: center;
-        margin-top: 90px;
     }
 
     .lang-item {
@@ -626,22 +443,8 @@ margin-bottom: 50px;
     .lang-box{
         display: block;
         max-width: 90%;
-        margin-left: 20%;    
-    }
-
-    .portfolio-content-link, .portfolio-content-source {
-        transition: 0.2s;
-        border: 2px solid black;
-        text-decoration: none;
-        margin-top: 10px;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-family: "Patua One";
-        padding-top: 5px;
     }
 }
-
-
 
 @media only screen and (max-width: 768px) {
     #st0,#st1,

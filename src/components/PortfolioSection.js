@@ -63,13 +63,6 @@ export default function PortfolioSection(){
                 <div className="workList-inner">
                     <WorkItem 
                     img="#"
-                    title="Eric Wickham Portfolio Website"
-                    lang="React, CSS"
-                    repo="#"
-                    desc="This website was a project I built to better understand how to use React. I took my original portfolio coded in css and JQuery and improved it with new functionality and a modern front-end framework."
-                    />
-                    <WorkItem 
-                    img="#"
                     title="Big Shiny Takes Buzzsprout API Episode Display"
                     lang="PHP, Javascript"
                     link="https://www.bigshinytakes.com/episodes.php"
@@ -92,6 +85,13 @@ export default function PortfolioSection(){
                     desc="This basic carousel, designed entirely in Javascript is completely modular, allows for the number of slides on display,
                      and moved per click to be changed in the javascript file, and adapts to any sized screen;"
                     />
+                    <WorkItem 
+                    img="#"
+                    title="Eric Wickham Portfolio Website"
+                    lang="React, CSS"
+                    repo="https://github.com/E-Wickham/react_portfolio"
+                    desc="This website was a project I built to better understand how to use React. I took my original portfolio coded in css and JQuery and improved it with new functionality in a modern front-end framework."
+                    />
                 </div>
             </div> 
             )}
@@ -106,18 +106,17 @@ export default function PortfolioSection(){
                 <div className="workList-inner">
                     <WorkItem 
                     img="#"
-                    title="Kijiji Webscraper - The Hoser:The Myth of Affordable Housing "
+                    title="Kijiji Webscraper - The Hoser: The Myth of Affordable Housing "
                     lang="Python, Javascript"
-                    link="#"                    
-                    desc="For this article I used my Kijiji webscraper to see how many listed Toronto rental units fit the description of affordable housing (as defined by the CMHC). Out of over 600 listings, only six on the website could technically be considered affordable."
+                    link="https://www.thehoser.ca/posts/the-myth-of-affordable-housing-in-toronto"                    
+                    desc="For this article I used a Kijiji webscraper to see how many listed Toronto rental units fit the description of affordable housing (as defined by the CMHC). Out of over 600 listings, only six on the website could technically be considered affordable."
                     />
                     <WorkItem 
                     img="#"
-                    title="Culture War By The Numbers"
-                    lang="Python"
-                    link="#"
-                    
-                    desc="This is a newsletter I write that documents the content (often lacking) in the opinion pages across the country. "
+                    title="Podcast Playlist Generator"
+                    lang="Vanilla JS"
+                    link="https://bigshinytakes.com/radio/"
+                    desc="Here is a small podcast playlist generator project I built. It collects the last five episodes from over a dozen different RSS feeds and places them into a random playlist for people to listen to directly on the website. This is a strictly front end app written entirely in Javascript. Future iterations of this app will include a more robust back-end and user preferences to help people find podcasts they are more interested in. "
                     />
                 </div>
             </div> 
@@ -135,14 +134,20 @@ export default function PortfolioSection(){
                     <WorkItem 
                     img="#"
                     title="Tech Won't Save Us"                    
-                    link="#"                    
-                    desc="This website was a project I built to better understand how to use React. I took my original portfolio coded in css and JQuery and improved it with new functionality and a modern front-end framework."
+                    link="https://techwontsave.us/"                    
+                    desc="This award winning podcast, hosted by Paris Marx is an interview show that examines the tech industry with a critical lens."
                     />
                     <WorkItem 
                     img="#"
-                    title="PressProgress Presents: Sources"
-                    link="#"
-                    desc="This is a newsletter I write that documents the content (often lacking) in the opinion pages across the country. "
+                    title="PressProgress: Sources"
+                    link="https://pressprogress.ca/trending-topics/pressprogress-sources-podcast/"
+                    desc="PressProgress Sources is an interview podcast that provides additional in-depth coverage on the biggest stories PressProgress reporters cover. The show digs deeper into the issues, featuring interviews with experts by the reporters who wrote the original news story."
+                    />
+                    <WorkItem 
+                    img="#"
+                    title="The Hoser Presents: Short Circuit"
+                    link="https://podcasts.apple.com/us/podcast/the-hoser-presents-short-circuit/id1614684146"
+                    desc="Short Circuit is a podcast hosted by Shannon Carranco and Kevin Taghabon, founders of the Hoser. The show covers the three major topics: food insecurity, labour, and housing across the GTA."
                     />
                 </div>
             </div> 
@@ -158,7 +163,7 @@ export default function PortfolioSection(){
                 <div className="workList-inner">
                     <WorkItem 
                     img="#"
-                    title="Macleans: 3D Printing Story"
+                    title="Macleans: 3D Printing Offers Canadian Schools a New Dimension"
                     link="https://www.macleans.ca/education/3-d-printing-offers-canadian-schools-a-new-dimension/"
                     desc=" An article I wrote for Maclean's Magazine about the best programs in universities using 3d Printing. 
                     I interviewed Douglas Kondro, a student who managed to 3D print prosthetic talons for a chicken."
