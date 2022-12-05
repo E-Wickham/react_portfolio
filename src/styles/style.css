@@ -9,6 +9,10 @@ main {
     z-index: 2;
 }
 
+a {
+    color: black!important;
+}
+
 a:hover, .work-item-link:hover{
     text-decoration-color: black;
     color: black!important
@@ -442,7 +446,6 @@ margin-bottom: 50px;
 
     .lang-box{
         display: block;
-        max-width: 90%;
     }
 }
 
@@ -454,4 +457,29 @@ margin-bottom: 50px;
     #st8,#st9 {
         display: none;
     }
+
+    .lang-flex {
+        max-width: 100%;
+    }
+    .lang-item {
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d";
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-gap: 0.5rem;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .lang-box {
+        display: block;
+        width: 100%;
+        margin: 0!important;
+        padding: 1rem;
+    }
+
 }
