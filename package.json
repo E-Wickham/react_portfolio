@@ -1,8 +1,8 @@
 {
   "name": "react_portfolio",
   "version": "0.1.0",
-  "homepage": "http://e-wickham.github.io",
-  "private": true,
+  "homepage": "https://e-wickham.github.io",
+  "private": false,
   "dependencies": {
     "@formkit/auto-animate": "^1.0.0-beta.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
