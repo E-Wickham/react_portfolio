@@ -37,11 +37,11 @@ export default function Body(){
                                     <div id="contact" className="contact-btn">
                                         <a href="mailto:eric.wickham1@gmail.com"><Icon.Mail /> Contact Me</a>
                                     </div>   
-                                    <div id="resume" className="contact-btn">
+                                    {/*<div id="resume" className="contact-btn">
                                         <a className="link-no-show" href="assets/ResumeEW.pdf">
                                             <Icon.Download /> Resume
                                         </a>    
-                                    </div>
+                                    </div>*/}
                                     <div className="contact-btn">
                                         <a className="link-no-show" href="https://twitter.com/ES_Wickham">
                                             <Icon.Twitter /> Twitter

@@ -37,9 +37,7 @@ export default function PortfolioSection(){
     return (
         <div>
             <div className="d-flex p-2 justify-content-center" id="folder-wrapper">
-                <div onClick={toggleModal} >
-                    <NewPortfolio  title="Web Development"/>
-                </div>
+
                 <div onClick={toggleModal2} >
                     <NewPortfolio title="New Media" />
                 </div>
@@ -48,6 +46,9 @@ export default function PortfolioSection(){
                 </div>
                 <div onClick={toggleModal4} >
                     <NewPortfolio title="Writing" />      
+                </div>
+                <div onClick={toggleModal} >
+                    <NewPortfolio  title="Web Development"/>
                 </div>
 
             </div>
