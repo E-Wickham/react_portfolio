@@ -29,8 +29,7 @@ export default function Body(){
                             </div>
                             <div className="helloMsg-grid">
                                 <h2>Hello, my name is Eric.</h2>
-                                <p>Welcome to my portfolio! I'm a full-stack developer with over half a decade experience in journalism, 
-                                communications and content creation. I currently work full time as a Full Stack Programmer.
+                                <p>Welcome to my portfolio. I'm a journalist, podcast producer, and full-stack developer with over half a decade experience in media roles.
                                 Take a look around, and if you have any questions about my work please feel free to reach out!
                                 </p>
                                 <div className="button-flex">
