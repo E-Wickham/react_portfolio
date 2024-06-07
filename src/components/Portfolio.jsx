@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import PortfolioTabs from './PortfolioTabs';
 
-//const Portfolio = (props) => { 
-
 class Portfolio extends Component {
     constructor(props) {
         super(props);
@@ -66,7 +64,7 @@ class Portfolio extends Component {
                         id="web-projects"
                         color="pink"
                         var="webProj"
-                        name="Web Projects"
+                        name="Projects"
                         onMouseEnter={this.changeFold()}
                         />
                     <PortfolioTabs 

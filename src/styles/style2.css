@@ -10,7 +10,7 @@ body2 {
   .svg {
     enable-background:new 0 0 561 406.02;
     position: absolute;
-    bottom: -100vh;
+    bottom: -400px;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
@@ -31,7 +31,7 @@ body2 {
   
   @-webkit-keyframes raise1 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(-0.3) rotate(91deg);
               transform: scale(-0.3) rotate(91deg);
     }
@@ -39,7 +39,7 @@ body2 {
   
   @keyframes raise1 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(-0.3) rotate(91deg);
               transform: scale(-0.3) rotate(91deg);
     }
@@ -60,7 +60,7 @@ body2 {
   
   @-webkit-keyframes raise2 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1) rotate(95deg);
               transform: scale(1) rotate(95deg);
     }
@@ -68,7 +68,7 @@ body2 {
   
   @keyframes raise2 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1) rotate(95deg);
               transform: scale(1) rotate(95deg);
     }
@@ -89,7 +89,7 @@ body2 {
   
   @-webkit-keyframes raise3 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1) rotate(175deg);
               transform: scale(1) rotate(175deg);
     }
@@ -97,7 +97,7 @@ body2 {
   
   @keyframes raise3 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1) rotate(175deg);
               transform: scale(1) rotate(175deg);
     }
@@ -118,7 +118,7 @@ body2 {
   
   @-webkit-keyframes raise4 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(0.6) rotate(248deg);
               transform: scale(0.6) rotate(248deg);
     }
@@ -126,7 +126,7 @@ body2 {
   
   @keyframes raise4 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(0.6) rotate(248deg);
               transform: scale(0.6) rotate(248deg);
     }
@@ -147,7 +147,7 @@ body2 {
   
   @-webkit-keyframes raise5 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(0.9) rotate(31deg);
               transform: scale(0.9) rotate(31deg);
     }
@@ -155,7 +155,7 @@ body2 {
   
   @keyframes raise5 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(0.9) rotate(31deg);
               transform: scale(0.9) rotate(31deg);
     }
@@ -176,7 +176,7 @@ body2 {
   
   @-webkit-keyframes raise6 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.2) rotate(90deg);
               transform: scale(1.2) rotate(90deg);
     }
@@ -184,7 +184,7 @@ body2 {
   
   @keyframes raise6 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.2) rotate(90deg);
               transform: scale(1.2) rotate(90deg);
     }
@@ -204,7 +204,7 @@ body2 {
   
   @-webkit-keyframes raise7 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.5) rotate(230deg);
               transform: scale(1.5) rotate(230deg);
     }
@@ -212,7 +212,7 @@ body2 {
   
   @keyframes raise7 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.5) rotate(230deg);
               transform: scale(1.5) rotate(230deg);
     }
@@ -232,7 +232,7 @@ body2 {
   
   @-webkit-keyframes raise8 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.8) rotate(236deg);
               transform: scale(1.8) rotate(236deg);
     }
@@ -240,7 +240,7 @@ body2 {
   
   @keyframes raise8 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(1.8) rotate(236deg);
               transform: scale(1.8) rotate(236deg);
     }
@@ -260,7 +260,7 @@ body2 {
   
   @-webkit-keyframes raise9 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(2.1) rotate(128deg);
               transform: scale(2.1) rotate(128deg);
     }
@@ -268,7 +268,7 @@ body2 {
   
   @keyframes raise9 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(2.1) rotate(128deg);
               transform: scale(2.1) rotate(128deg);
     }
@@ -289,7 +289,7 @@ body2 {
   
   @-webkit-keyframes raise10 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(2.4) rotate(214deg);
               transform: scale(2.4) rotate(214deg);
     }
@@ -297,7 +297,7 @@ body2 {
   
   @keyframes raise10 {
     to {
-      bottom: 150vh;
+      bottom: 100vh;
       -webkit-transform: scale(2.4) rotate(214deg);
               transform: scale(2.4) rotate(214deg);
     }

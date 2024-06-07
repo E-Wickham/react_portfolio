@@ -20,11 +20,7 @@ a:hover, .work-item-link:hover{
 li > a:hover {
     color: midnightblue;
 }
-.contact-buttons {
-    position:absolute;
-    right: 10px;
-    margin-bottom: 0;
-}
+
 .contact-btn {
     cursor: pointer;
 }
@@ -33,10 +29,50 @@ li > a:hover {
     color: black!important;
 }
 
+.about-btn, div.contact-btn {
+    color: #fff;
+    background-color: transparent;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
+    border: 2px solid #fff;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    border-radius: 0.185rem;
+    margin-top:0.35rem;
+}
+
+div.contact-btn:hover,    
+.about-btn:hover,
+.about-btn:focus {
+    color: #fff;
+    box-shadow: inset 11.5rem 0 0 0 rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+      
+
+.contact-buttons {
+    margin-top: 1rem;
+    position:relative;
+    z-index: 3;
+}
+
+.contact-buttons > li:hover {
+    background-color: rgba(255,255,255,0.4);
+    transition: 0.5s;
+}
+
 .contact-buttons > li{
     list-style: none;
     display: inline;
-    margin-right: 15px;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+}
+
+.contact-buttons svg {
+    position: relative;
+    bottom: 2px;
 }
 
 body {
@@ -104,6 +140,11 @@ p {
     animation: opac 0.6s ease-in;
 }
 
+.portfolio-section h3 {
+    text-align: center;
+    padding-top: 2rem;
+}
+
 @keyframes opac {
     from {
         opacity: 0;
@@ -120,8 +161,8 @@ p {
     text-align: left;
 }
 #helloMsg>p {
-margin-top: 50px;
-margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 #welcome{
@@ -131,25 +172,26 @@ margin-bottom: 50px;
 .button-flex {
     display: flex;
     justify-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.button-flex > * {
+/*.button-flex > * {
     max-width: 200px;
-}
-.contact-btn {
-    font-family: Patua One;
-    border: 2px solid black;
-    padding: 5px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    flex: 1 0 0;
-    text-align: center;
+}*/
+
+.button-flex a {
+    flex: 1 0 auto;
+    text-decoration: none;
 }
 
-.contact-btn:hover {
-    background-color: #E3E0AF;
-    transition: 0.3s;
+.contact-buttons {
+    position:absolute;
+    right: 10px;
+    margin-bottom: 0;
 }
+
 
 #switchBG {
     position: relative;
@@ -157,7 +199,6 @@ margin-bottom: 50px;
     height: 100%;
     color: lightblue;
     z-index: 2;
-    padding-bottom: 2rem;
 }
 
 .iconpic {
@@ -167,43 +208,71 @@ margin-bottom: 50px;
 
 .lang-title{
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.75rem;
     padding: 1rem 0;
-    text-decoration: underline;
 }
 
 .lang-box{
     display: block;
     width: 75%;
-    margin: 30px auto;
+    margin: auto;
 }
 
 .lang-flex{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,4fr));
+    /*display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,4fr));*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lang-item-school {
     border: 2px solid lightblue;
     margin: 0.5rem;
     padding: 1rem;
+    flex: 0 0 400px;
+
 }
 .lang-item {
     border: 2px solid #2a2a2a;
+    border-radius: 0.25rem;
     color:#2a2a2a;
-    margin: 10px;
+    margin: 10px 0;
     padding: 1rem;
-    min-width: 250px;
     justify-content: center;
     align-items: center;
     display: grid;
     grid-template-areas: "a b"
                          "a c"
                          "a d";
-    grid-template-columns: 1fr minmax(100px, 2fr);
-    background-color: #f7f5f5;
+    grid-template-columns: 1fr minmax(100px, 6fr);
+    background-color: rgba(247, 245, 245, 0.98);
+    flex: 0 0 400px;
 }
 
+/* ACCORDION COMPONENT */
+
+.lang-box {
+    padding: 1.5rem 0;
+}
+
+.lang-box svg:hover{
+    fill: rgba(255,255,255,0.3);
+    cursor: pointer;
+}
+.height-toggle-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .height-toggle-content {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .content-inner {
+    padding: 15px;
+  }
 /* EXPERIENCE BLOCKS */
 
 .lang-item img {
@@ -238,6 +307,15 @@ margin-bottom: 50px;
 .lang-item h4 {
     margin:0;
 }
+.exp-year-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-events, .timeline-y {
+    flex: 1 auto;
+}
+
 
 /* NEW PORTFOLIO SECTION - NOV 26 */
 
@@ -273,7 +351,8 @@ margin-bottom: 50px;
 
 .folder-details {
     position: relative;
-    top: 275px;
+    top: 185px;
+    right: 15px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -307,6 +386,10 @@ margin-bottom: 50px;
     margin: auto;
 }
 
+.wi-link-flex a {
+    text-decoration: none;
+}
+
 .wi-link-flex:nth-of-type(1), .wi-link-flex-title {
     justify-content: space-between;
     padding: 0;
@@ -327,14 +410,39 @@ margin-bottom: 50px;
     padding: 0.5rem;
     margin: 0.25rem;
 }
-.work-item {
+.work-item, .pi-ctn {
     border: 2px solid black;
     padding: 1rem;
     max-width: 100%;
     text-align: left;
     margin: 1rem 0;
     background: rgba(255,255,255,0.9);
+    transition: 0.3s;
+    border-radius: 0.185rem;
 }
+
+/* project item */
+.pi-ctn {
+    text-align: left;
+    padding: 1rem;
+
+}
+.pi-grid {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    grid-gap: 1rem;
+}
+
+.pi-grid img {
+    width: 100%;
+}
+
+
+.pi-lang {
+    grid-column: span 2;
+}
+
+
 
 .hello-flex {
     display:flex;
@@ -363,28 +471,28 @@ margin-bottom: 50px;
 }
 
 .code-lang {
-    border-radius: 50%;
+    border-radius: 0.25rem;
     padding: 1rem;
     background-color: transparent;
     border: 2px solid lightblue;
     position: relative;
     z-index: 4;
     text-align: center;
-    width: 120px;
-    height: 120px;
+
 }
 .code-lang h4 {
-    padding: 1.7rem 0 0.5rem 0;
+    padding: 0.5rem;
+    margin: 0;
     justify-self: center;
 }
 
 .code-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px,4fr));
-    justify-items: center;
+    display: flex;
     grid-gap: 1rem;
     width: 100%;
+    flex-wrap: wrap;
 }
+
 .lang-leg {
     border: 2px solid lightblue;
     width: 230px;
@@ -405,6 +513,216 @@ margin-bottom: 50px;
     align-items: center;
 }
 
+.work-link {
+    text-decoration: none;
+}
+
+.work-link-anchor {
+    position: relative;
+    bottom: 300px;
+}
+
+/* new work May 09 */
+
+.hero-contain {
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.hero-contain:before {
+    height:200px;
+    width: 200px;
+    background-color: black;
+}
+
+.hero-contain img {
+    float: right;
+}
+
+.hero-cover {
+    background:url(/public/assets/Eric_meeting.jpeg);
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+    background-position-x: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.hero-cover:after {
+    position: absolute;
+    content:"";
+    height:550px;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 300px, rgba(0, 0, 0, 0.5) 50%, rgba(0, 212, 255, 0) 100%);
+}
+
+/* blog June 5 2024 */
+
+.blog-section {
+    min-height: 500px;
+    padding: 1rem;
+    background-color: #2a2a2a;
+    position:relative;
+    z-index: 2;
+    color:#f1f1f1;
+}
+
+.blog-carousel {
+    display: flex;
+    gap: 2rem;
+}
+
+.blog-carousel .box1 {
+    flex: 1 1 auto;
+    border: 2px solid red;
+    height: 200px;
+}
+.eric-details {
+    color: white;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.eric-details h1 {
+    font-size: 5rem;
+    padding-right:0.5rem;
+    margin:0;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 8px solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .015em; /* Adjust as needed */
+    animation: 
+    typing 1s steps(12, end),
+    blink-caret 1s step-end infinite;
+}
+
+.eric-details h3 {
+    font-family: Lato;
+    animation: fadeIn 2s;
+    animation-delay: fadeIn 1s;
+}
+
+.folder-name h4 {
+    font-size: 1.1rem;
+}
+
+
+.about-section {
+    overflow: hidden;
+}
+
+/* about */
+
+.about-ctn {
+    transition: 0.4s;
+}
+
+.about-ctn.active {
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 0.185rem;
+    margin-top: 1rem;
+    position: relative;
+    z-index: 3;
+    transition: 0.4s;
+}
+
+.about-section1,
+.about-section2,
+.about-section3, 
+.about-section4,
+.about-section5
+ {
+    visibility: hidden;
+    color: #fff;
+    z-index: 3;
+    position: relative;
+}
+
+.about-section2 p,
+.about-section3 p,
+.about-section4 p,
+.about-section5 p {
+    margin: 0;
+}
+
+.about-section1 p,
+.about-section4 p {
+    margin-bottom: 0.5rem;
+}
+
+.about-section1.active,
+.about-section2.active,
+.about-section3.active, 
+.about-section4.active, 
+.about-section5.active {
+    width: 100%;
+    white-space:nowrap;
+    margin:0;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: typing 2s steps(50, end) forwards;
+}
+.about-section2.active {
+    animation-delay: 1.5s;
+}
+.about-section3.active {
+    animation-delay: 3.5s;
+}
+.about-section4.active {
+    animation-delay: 5.5s;
+}
+.about-section5.active {
+    animation-delay: 7s;
+}
+
+
+
+/* The typing effect */
+  @keyframes typing {
+    from { width: 0; visibility: visible;}
+    to { width: 100%; visibility: visible;}
+  }
+  
+/* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: white; }
+  }
+
+  @keyframes fadeIn {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+  @keyframes imageFadeIn {
+    from, to {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 871px) and (max-width: 1200px) {
@@ -417,6 +735,8 @@ margin-bottom: 50px;
     .helloMsg-grid h2 {
         text-align: center;
     }
+
+    
 }
 @media only screen and (max-width: 870px) {
 
@@ -440,12 +760,22 @@ margin-bottom: 50px;
     }
 
     .lang-item {
-        margin: 10px;
+        margin: 10px 0;
         padding: 5px;
     }
 
     .lang-box{
         display: block;
+    }
+
+    .container-svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .folder-details {
+        top: 160px;
+        left: 5px;
     }
 }
 
@@ -483,6 +813,14 @@ margin-bottom: 50px;
         margin: 0!important;
         padding: 1rem;
     }
+
+    .lang-item-school{
+        flex: 0 1 400px;
+    }    
+
+    .wi-link-flex {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -504,5 +842,6 @@ margin-bottom: 50px;
     .hero-img img, .contact-buttons  {
         display:none;
     }
+
     
 }

@@ -8,6 +8,7 @@ export default function WorkItem(props) {
             <div className="wi-link-flex">
                 <h4>{props.title}</h4>
                 {props.lang && (<h5>Languages: {props.lang}</h5>)}
+                {props.img && (<img src={props.img} alt=""/>)}
             </div>
             
             <h5>Project Description</h5>
@@ -15,8 +16,8 @@ export default function WorkItem(props) {
                 {props.desc}
             </div>
             <div className="wi-link-flex">
-                {props.link && (<h5 className="work-item-link"><a href={props.link}><ExternalLink /> Link</a></h5>)}
-                {props.repo && (<h5 className="work-item-link"><a href={props.repo}><GitHub /> Github</a></h5>)}
+                {props.link && (<a href={props.link} target="_blank" rel="noreferrer"><h5 className="work-item-link"><ExternalLink /> Link</h5></a>)}
+                {props.repo && (<a href={props.repo} target="_blank" rel="noreferrer"><h5 className="work-item-link"><GitHub /> Github</h5></a>)}
             </div>
 
         </div>
