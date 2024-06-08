@@ -3,6 +3,9 @@ import NewPortfolio from './NewPortfolio';
 import ProjectItem from './ProjectItem1';
 import { X } from 'react-feather';
 import grocerytracker from './img/scr-proj/grocerytracker.png';
+import twsu from './img/scr-proj/twsu.jpg';
+import unrigged from './img/scr-proj/cropped-unrigged_logo_nautical.png';
+import sources from './img/scr-proj/sources.png';
 
 export default function PortfolioSection(){
     const [modal, setModal] = useState(false);
@@ -37,21 +40,23 @@ export default function PortfolioSection(){
     return (
         <div>
             <h3>Current Projects</h3>
-            <div className="d-flex p-2 justify-content-center" id="folder-wrapper">
+            <div className='portfolio-container'>
+                <div className="portfolioflex" id="folder-wrapper">
 
-                <div onClick={toggleModal2} >
-                    <NewPortfolio title="Hoser Grocery Tracker" />
-                </div>
-                <div onClick={toggleModal3} >
-                    <NewPortfolio title="Tech Won't Save Us" />
-                </div>
-                <div onClick={toggleModal4} >
-                    <NewPortfolio title="Unrigged" />      
-                </div>
-                <div onClick={toggleModal} >
-                    <NewPortfolio  title="PressProgress: Sources"/>
-                </div>
+                    <div onClick={toggleModal2} >
+                        <NewPortfolio title="Hoser Grocery Tracker" />
+                    </div>
+                    <div onClick={toggleModal3} >
+                        <NewPortfolio title="Tech Won't Save Us" />
+                    </div>
+                    <div onClick={toggleModal4} >
+                        <NewPortfolio title="Unrigged" />      
+                    </div>
+                    <div onClick={toggleModal} >
+                        <NewPortfolio  title="PressProgress: Sources"/>
+                    </div>
 
+                </div>
             </div>
             <div id="work-link-anchor"></div>
 
@@ -67,7 +72,7 @@ export default function PortfolioSection(){
                 <div className="workList-inner">
                 <ProjectItem 
                     title="PressProgress: Sources"
-                    img=""
+                    img={sources}
                     tl="Aug 2022 - Present"
                     link="https://pressprogress.ca"
                     desc='PressProgress: Sources is a news podcast that highlights interviews by reporters in the PressProgress newsroom. It is a supplementary to the original reporting on PressProgress.ca but it provides further insight into the stories that have already been written.'
@@ -146,16 +151,14 @@ export default function PortfolioSection(){
                 <div className="workList-inner">
                     <ProjectItem 
                     title="Tech Won't Save Us"
-                    img=""
+                    img={twsu}
                     tl="Aug 2022 - Present"
-                    link="https://pressprogress.ca"
+                    link="https://techwontsave.us"
                     desc='PressProgress: Sources is a news podcast that highlights interviews by reporters in the PressProgress newsroom. It is a supplementary to the original reporting on PressProgress.ca but it provides further insight into the stories that have already been written.'
                     hl1_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    hl1_desc="Elon Musk Documentary"
+                    hl1_desc="Elon Musk Audio Documentary"
                     hl2_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
                     hl2_desc="Recommendation in NYT"
-                    hl3_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    hl3_desc="Price Changes Story"
                     ft1_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
                     ft1_desc="Podcast RSS Feed"
 
@@ -175,7 +178,7 @@ export default function PortfolioSection(){
                     
                 <ProjectItem 
                     title="Unrigged"
-                    img=""
+                    img={unrigged}
                     tl="Aug 2022 - Present"
                     link="https://unrigged.ca"
                     desc='PressProgress: Sources is a news podcast that highlights interviews by reporters in the PressProgress newsroom. It is a supplementary to the original reporting on PressProgress.ca but it provides further insight into the stories that have already been written.'
