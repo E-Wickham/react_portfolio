@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import Header from '../Header';
+import Nav from '../partial/Nav';   
 
 const importAll = (r) => r.keys().map(r);
 const markdownFiles = importAll(require.context('./posts', false, /\.md$/))
@@ -21,7 +23,7 @@ class Blog extends Component {
   render() {
     const { posts } = this.state;
 
-    //console.log("THESE ARE THE POSTS", posts)
+    console.log("THESE ARE THE POSTS", posts)
     let postsA = []
     let postCount = 0;
     posts.forEach(post => {
@@ -75,7 +77,7 @@ class Blog extends Component {
         let imgPath = '/blog/'+img
         let content = findElem(cReg,post,'content')
         let filePath = '/blog' + findPostName(url)
-        //console.log("FILEPATH: ", filePath)
+        console.log("FILEPATH: ", filePath)
 
         // Create an object for each blog post to push to the set up
         let postItem = {'title': title, 'url': url, 'pubDate' : pubDate, 'content': content, 'img': imgPath, 'fileName': filePath}
@@ -85,20 +87,26 @@ class Blog extends Component {
         }
         //console.log("posts",postsA)
     })
+    postsA.sort((a,b) => a.pubDate - b.pubDate)
+
     return (
           <div>
+            <Header />
+            <Nav />
             <Helmet title="Eric Wickham Blog" />
-              <section className="blog-section" id='blog'>
-                  <h4 className="blog-section-title">Blog</h4>
-                <div className="blog-carousel">
+            <h1 className="blog-title-landing">Blog Entries</h1>
+
+              <section className="blog-landing-section" id='blog'>
+                <div className="blog-carousel-2">
                   {
                     postsA.map((post, idx) => (
-                      <a href={post.fileName} key={idx}>
-                      <div className="box1" >
-                        <div className="box1Img">
+                      //get a number to add to class
+                      <a href={post.fileName}>
+                      <div className="box2" key={idx}>
+                        <div className="box2-img">
                           <img src={process.env.PUBLIC_URL + post.img} alt={post.title} />
                         </div>
-                        <div className="box1-content">
+                        <div className="box2-content">
                           <div className="content">
                             <h4>{post.title}</h4>
                             <h6>{post.pubDate}</h6>
@@ -108,11 +116,6 @@ class Blog extends Component {
                       </a>
                     ))
                   }
-                </div>
-                <div className='blog-link-container'>
-                  <a href="/blog"> 
-                    <h5 className="blog-link">Read more</h5>
-                  </a>
                 </div>
               </section>
           </div>
