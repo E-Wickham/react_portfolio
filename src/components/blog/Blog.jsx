@@ -90,6 +90,7 @@ class Blog extends Component {
             <Helmet title="Eric Wickham Blog" />
               <section className="blog-section" id='blog'>
                   <h4 className="blog-section-title">Blog</h4>
+                  <div>Coming Soon!</div>
                 <div className="blog-carousel">
                   {
                     postsA.map((post, idx) => (

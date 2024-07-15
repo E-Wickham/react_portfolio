@@ -615,7 +615,9 @@ p {
 }
 
 /* blog June 5 2024 */
-
+.blog-carousel{
+    display: none;
+}
 .blog-section {
     min-height: 500px;
     padding: 1rem;

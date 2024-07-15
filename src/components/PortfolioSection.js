@@ -76,14 +76,8 @@ export default function PortfolioSection(){
                     tl="Aug 2022 - Present"
                     link="https://pressprogress.ca"
                     desc='PressProgress: Sources is a news podcast that highlights interviews by reporters in the PressProgress newsroom. It is a supplementary to the original reporting on PressProgress.ca but it provides further insight into the stories that have already been written.'
-                    hl1_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    hl1_desc="Interview on Metro Morning"
-                    hl2_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    hl2_desc="Interview on This is VANCOLOUR"
-                    hl3_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    hl3_desc="Price Changes Story"
-                    ft1_link="https://www.cbc.ca/listen/live-radio/1-39-metro-morning/clip/16060426-a-month-long-boycott-loblaws-stores-begins-but-difference"
-                    ft1_desc="Podcast RSS Feed"
+                    ft1_link="https://pressprogress.ca/trending-topics/pressprogress-sources-podcast/"
+                    ft1_desc="Podcast Feed"
 
                     />
                 </div>
