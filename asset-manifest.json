@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.5d219653.css",
-    "main.js": "/react_portfolio/static/js/main.e932b161.js",
+    "main.css": "/react_portfolio/static/css/main.13b9db7e.css",
+    "main.js": "/react_portfolio/static/js/main.0a571621.js",
     "static/js/453.bb257cf5.chunk.js": "/react_portfolio/static/js/453.bb257cf5.chunk.js",
     "static/media/twsu.jpg": "/react_portfolio/static/media/twsu.9b4b024a60506cebb602.jpg",
     "static/media/grocerytracker.png": "/react_portfolio/static/media/grocerytracker.f0e56a6e20db08862a4d.png",
@@ -14,12 +14,12 @@
     "static/media/in-between_07-14-24.md": "/react_portfolio/static/media/in-between_07-14-24.b97b79b60b13e0f8f9fe.md",
     "static/media/blog3.md": "/react_portfolio/static/media/blog3.0605d1ea69ac25506941.md",
     "index.html": "/react_portfolio/index.html",
-    "main.5d219653.css.map": "/react_portfolio/static/css/main.5d219653.css.map",
-    "main.e932b161.js.map": "/react_portfolio/static/js/main.e932b161.js.map",
+    "main.13b9db7e.css.map": "/react_portfolio/static/css/main.13b9db7e.css.map",
+    "main.0a571621.js.map": "/react_portfolio/static/js/main.0a571621.js.map",
     "453.bb257cf5.chunk.js.map": "/react_portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d219653.css",
-    "static/js/main.e932b161.js"
+    "static/css/main.13b9db7e.css",
+    "static/js/main.0a571621.js"
   ]
 }
