@@ -1,21 +1,21 @@
 import React, { useState,useEffect } from 'react';
-import {Helmet} from 'react-helmet';
+//import {Helmet} from 'react-helmet';
 import { useParams } from 'react-router-dom';
 import Nav from '../partial/Nav';
 import ReactMarkdown from 'react-markdown'
 import Blog from './Blog'
-import Header from '../Header';
+//import Header from '../Header';
 
 
-const importAll = (r) => r.keys().map(r);
-const markdownFiles = importAll(require.context('./posts', false, /\.md$/))
-    .sort()
-    .reverse()
+//const importAll = (r) => r.keys().map(r);
+//const markdownFiles = importAll(require.context('./posts', false, /\.md$/))
+    //.sort()
+    //.reverse()
 
 const Post = () => {   
 
     const { postName } = useParams()
-    const postVal = "123124"
+    //const postVal = "123124"
     const importAll = (r) => r.keys().map(r);
     const markdownFiles = importAll(require.context('./posts', false, /\.md$/))
     .sort()
@@ -23,7 +23,7 @@ const Post = () => {
 
     //Set the Content, title and image from variables on this end
     const [content, setContent] = useState('');
-    const [title, setTitle] = useState('');
+    //const [title, setTitle] = useState('');
     const [image, setImage] = useState('');
         function findElem(regex, text, val) {
             const match = text.match(regex)
@@ -56,20 +56,20 @@ const Post = () => {
         const filePath = `./${postName}.md`;
         //console.log(filePath)
         //console.log(context.keys())
-        let files1 = context.keys()
+        ///let files1 = context.keys()
           if (context.keys().includes(filePath)) {
             const fileContent = await context(filePath);
             const response = await fetch(fileContent);
             const text = await response.text();
             const uReg = /<!--(.*?)-->/;
             const tReg = /title:.*/
-            const pReg = /pubDate:.*/
+           // const pReg = /pubDate:.*/
             const cReg = /[\s\S]*/
             const iReg = /image:.*/
     
             let title = findElem(tReg, text, 'title')
             let url = findElem(uReg, text, 'url')
-            let pubDate = findElem(pReg,text,'pubDate')
+            //let pubDate = findElem(pReg,text,'pubDate')
             let img = findElem(iReg,text,'img')
             let imgPath = '/blog/'+img
             let postContent = findElem(cReg,text,'content')
@@ -78,7 +78,7 @@ const Post = () => {
             //console.log(content)
             console.log(url)
             setContent(postContent);
-            setTitle(title);
+            //setTitle(title);
             setImage(imgPath);
           } else {
             setContent('Post not found');

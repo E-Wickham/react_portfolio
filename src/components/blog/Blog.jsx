@@ -90,10 +90,11 @@ class Blog extends Component {
             <Helmet title="Eric Wickham Blog" />
               <section className="blog-section" id='blog'>
                   <h4 className="blog-section-title">Blog</h4>
-                  <div>Coming Soon!</div>
+                  <h5 className="blog-section-title">Coming Soon!</h5>
                 <div className="blog-carousel">
                   {
-                    postsA.map((post, idx) => (
+                    console.log("coming soon")
+                    /*postsA.map((post, idx) => (
                       <a href={post.fileName} key={idx}>
                       <div className="box1" >
                         <div className="box1Img">
@@ -107,7 +108,7 @@ class Blog extends Component {
                         </div>
                       </div>
                       </a>
-                    ))
+                    ))*/
                   }
                 </div>
                 <div className='blog-link-container'>
