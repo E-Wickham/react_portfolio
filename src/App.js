@@ -13,7 +13,7 @@ function App() {
       <Header />
         <Router>
           <Routes>
-              <Route path="/react_portfolio" element={<Home/>} />
+              <Route path="/" element={<Home/>} />
               <Route path="/blog/:postName" element={<Post/>} />
               <Route path="/blog" element={<BlogLanding/>} />
           </Routes>
