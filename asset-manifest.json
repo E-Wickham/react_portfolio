@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.13b9db7e.css",
-    "main.js": "/react_portfolio/static/js/main.a0c9ad52.js",
-    "static/js/453.bb257cf5.chunk.js": "/react_portfolio/static/js/453.bb257cf5.chunk.js",
-    "static/media/twsu.jpg": "/react_portfolio/static/media/twsu.9b4b024a60506cebb602.jpg",
-    "static/media/grocerytracker.png": "/react_portfolio/static/media/grocerytracker.f0e56a6e20db08862a4d.png",
-    "static/media/Eric_meeting.jpeg": "/react_portfolio/static/media/Eric_meeting.a79a2df572fae1ee5beb.jpeg",
-    "static/media/cbc.png": "/react_portfolio/static/media/cbc.d10cbda97f467bb55a72.png",
-    "static/media/sources.png": "/react_portfolio/static/media/sources.26e6f34157d112412cb6.png",
-    "static/media/habitat.png": "/react_portfolio/static/media/habitat.5a2dac283be82f6a0968.png",
-    "static/media/moose.png": "/react_portfolio/static/media/moose.bbe996d68ea5e65048d2.png",
-    "static/media/cropped-unrigged_logo_nautical.png": "/react_portfolio/static/media/cropped-unrigged_logo_nautical.9f7dc3873470c2dad8f4.png",
-    "static/media/in-between_07-14-24.md": "/react_portfolio/static/media/in-between_07-14-24.b97b79b60b13e0f8f9fe.md",
-    "static/media/blog3.md": "/react_portfolio/static/media/blog3.0605d1ea69ac25506941.md",
-    "index.html": "/react_portfolio/index.html",
-    "main.13b9db7e.css.map": "/react_portfolio/static/css/main.13b9db7e.css.map",
-    "main.a0c9ad52.js.map": "/react_portfolio/static/js/main.a0c9ad52.js.map",
-    "453.bb257cf5.chunk.js.map": "/react_portfolio/static/js/453.bb257cf5.chunk.js.map"
+    "main.css": "./static/css/main.92803b46.css",
+    "main.js": "./static/js/main.f75ada1f.js",
+    "static/js/453.bb257cf5.chunk.js": "./static/js/453.bb257cf5.chunk.js",
+    "static/media/twsu.jpg": "./static/media/twsu.9b4b024a60506cebb602.jpg",
+    "static/media/grocerytracker.png": "./static/media/grocerytracker.f0e56a6e20db08862a4d.png",
+    "static/media/Eric_meeting.jpeg": "./static/media/Eric_meeting.a79a2df572fae1ee5beb.jpeg",
+    "static/media/cbc.png": "./static/media/cbc.d10cbda97f467bb55a72.png",
+    "static/media/sources.png": "./static/media/sources.26e6f34157d112412cb6.png",
+    "static/media/habitat.png": "./static/media/habitat.5a2dac283be82f6a0968.png",
+    "static/media/moose.png": "./static/media/moose.bbe996d68ea5e65048d2.png",
+    "static/media/cropped-unrigged_logo_nautical.png": "./static/media/cropped-unrigged_logo_nautical.9f7dc3873470c2dad8f4.png",
+    "static/media/in-between_07-14-24.md": "./static/media/in-between_07-14-24.b97b79b60b13e0f8f9fe.md",
+    "static/media/blog3.md": "./static/media/blog3.0605d1ea69ac25506941.md",
+    "index.html": "./index.html",
+    "static/media/blog2 copy 3.md": "./static/media/blog2 copy 3.819e24e3da006d6b8341.md",
+    "main.92803b46.css.map": "./static/css/main.92803b46.css.map",
+    "main.f75ada1f.js.map": "./static/js/main.f75ada1f.js.map",
+    "453.bb257cf5.chunk.js.map": "./static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13b9db7e.css",
-    "static/js/main.a0c9ad52.js"
+    "static/css/main.92803b46.css",
+    "static/js/main.f75ada1f.js"
   ]
 }
